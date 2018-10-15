@@ -6,12 +6,12 @@
 class EmailParser
 attr_accessor :email
 
- def initialize(email)
-   @email = email
+ def initialize(email) #initializes with argument of a string
+   @email = email #sets variable from argument to eq instance variable available to all methods within EmailParser class 
  end
 
- def parse
-  email.delete(',').split.uniq
+ def parse  #method
+  email.delete(',').split.uniq #.delete(',')
  end
 
 end
